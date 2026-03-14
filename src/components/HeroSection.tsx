@@ -38,7 +38,7 @@ const HeroSection = () => {
               </a>
             </Button>
             
-            <Button variant="whatsApp" size="lg" className="text-white border-white hover:bg-white/10" asChild>
+            <Button variant="outline"size="lg"className="text-[#25D366] border-[#25D366] hover:bg-[#25D366] hover:text-white" asChild>
               <a href="https://wa.me/5599981355292" target="_blank" rel="noopener noreferrer">
                 <Phone className="w-5 h-5 mr-2" />
                 WhatsApp
