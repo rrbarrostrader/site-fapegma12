@@ -45,7 +45,7 @@ const Header = () => {
           <Button variant="whatsapp" size="sm" asChild>
             <a href="https://wa.me/5599981355292" target="_blank" rel="noopener noreferrer">
               <Phone className="w-4 h-4 mr-2" />
-              WhatsApp2
+              WhatsApp
             </a>
           </Button>
         </div>
