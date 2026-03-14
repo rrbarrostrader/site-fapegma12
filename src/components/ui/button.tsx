@@ -11,15 +11,12 @@ const buttonVariants = cva(
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-    
-        // Dentro de variant: { ... }
-        outline: "border-2 border-[#25D366] bg-transparent text-[#25D366] hover:bg-[#25D366] hover:text-white font-bold",
+        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         hero: "bg-accent text-accent-foreground hover:bg-accent/90 font-semibold shadow-lg",
-        // CORREÇÃO: Usando a cor hexadecimal direta para o WhatsApp
-        whatsApp: "bg-[#25D366] text-white hover:bg-[#128C7E] font-semibold shadow-lg",
+        whatsapp: "bg-whatsapp text-accent-foreground hover:bg-whatsapp/90 font-semibold shadow-lg",
         "hero-outline": "border-2 border-primary-foreground bg-transparent text-primary-foreground hover:bg-primary-foreground/10 font-semibold",
       },
       size: {
