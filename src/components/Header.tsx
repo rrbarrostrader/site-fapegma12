@@ -73,7 +73,7 @@ const Header = () => {
               {link.label}
             </a>
           ))}
-          <Button variant="what" size="sm" className="mt-4 w-full" asChild onClick={() => setMobileOpen(false)}>
+           <Button variant="whatsApp" size="sm" asChild>
             <a href="https://wa.me/5599981355292" target="_blank" rel="noopener noreferrer">
               <Phone className="w-4 h-4 mr-2" />
               WhatsApp
