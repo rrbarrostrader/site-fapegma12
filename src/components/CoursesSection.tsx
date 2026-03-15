@@ -6,7 +6,7 @@ const categories = [
     icon: GraduationCap,
     title: "Graduação",
     description: "Cursos de bacharelado e licenciatura com formação completa.",
-    courses: ["Administração", "Pedagogia","História", "Matemática", "Língua Portuguesa/Inglês/Espanhol"],
+    courses: ["Administração", "Pedagogia","História", "Matemática","Geografia", "Língua Portuguesa/Inglês/Espanhol"],
     color: "bg-primary",
     textColor: "text-white",
   },
