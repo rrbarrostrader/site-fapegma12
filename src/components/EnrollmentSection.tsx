@@ -120,9 +120,9 @@ const EnrollmentSection = () => {
               </select>
             </div>
 
-            <Button type="submit" variant="whatsapp" size="lg" className="w-full text-base flex items-center justify-center gap-2">
+            <Button type="submit" variant="whatsapp" size="lg" className="w-full text-base font-bold py-7 rounded-xl shadow-lg hover:scale-105 transition-all flex items-center justify-center gap-2">
               <Phone className="w-5 h-5" />
-              Enviar Inscrição via WhatsApp
+              GARANTIR MINHA VAGA AGORA
             </Button>
           </form>
         </div>
