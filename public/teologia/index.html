@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Bacharel em Teologia - IAB FAPEGMA</title>    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+      :root {
+        --font-display: 'Playfair Display', serif;
+        --font-body: 'Lora', serif;
+      }
+      /* Ajustes para caminhos locais das imagens */
+      .bg-banner { background-image: url('assets/banner.png') !important; }
+      .bg-anuncio { background-image: url('assets/anuncio.png') !important; }
+      /* Garantir que o root ocupe a tela toda */
+      #root { min-height: 100vh; }
+      /* Correção para links que agem como botões */
+      a.inline-flex { text-decoration: none !important; }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <!-- O conteúdo será inserido aqui -->
+    </div>
+    <script>
+        // Carregar o conteúdo original
+        fetch('processed_root.html')
+            .then(response => {
+                if (!response.ok) throw new Error('Erro ao carregar conteúdo');
+                return response.text();
+            })
+            .then(html => {
+                document.getElementById('root').innerHTML = html;
+            })
+            .catch(err => {
+                console.error(err);
+                // Fallback caso o fetch falhe (ex: rodando localmente sem servidor)
+                document.getElementById('root').innerHTML = '<div style="padding: 20px; text-align: center;">Erro ao carregar o conteúdo. Certifique-se de estar acessando via um servidor (http/https).</div>';
+            });
+    </script>
+</body>
+</html>
