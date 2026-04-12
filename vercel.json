@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "vite build",
+  "buildCommand": "cp -r público/teologia /tmp/teologia-backup && npm run build && cp -r /tmp/teologia-backup público/teologia",
   "outputDirectory": "público",
   "framework": null,
   "cleanUrls": false,
