@@ -20,7 +20,6 @@ export default defineConfig(({ mode }) => ({
   build: {
     outDir: "público",
     emptyOutDir: false,
-    cssCodeSplit: true,
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, "index.html"),
