@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "buildCommand": "mv público/teologia /tmp/teologia-save 2>/dev/null; npm run build; mv /tmp/teologia-save público/teologia 2>/dev/null; exit 0",
   "outputDirectory": "público",
   "framework": null,
   "cleanUrls": false,
