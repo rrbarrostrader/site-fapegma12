@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    outDir: "público",
+    outDir: "public",
     emptyOutDir: false,
     rollupOptions: {
       input: {
