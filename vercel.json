@@ -1,15 +1,11 @@
 {
   "version": 2,
-  "buildCommand": "vite build",
-  "outputDirectory": "público",
-  "framework": null,
   "cleanUrls": false,
   "trailingSlash": false,
   "rewrites": [
     { "source": "/teologia", "destination": "/teologia/index.html" },
     { "source": "/teologia/", "destination": "/teologia/index.html" },
-    { "source": "/teologia/index.html", "destination": "/teologia/index.html" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/teologia/index.html", "destination": "/teologia/index.html" }
   ],
   "headers": [
     {
