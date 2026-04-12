@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Bacharel em Teologia - IAB FAPEGMA</title>    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+      :root {
+        --font-display: 'Playfair Display', serif;
+        --font-body: 'Lora', serif;
+      }
+      /* Ajustes para caminhos locais das imagens */
+      .bg-banner { background-image: url('assets/banner.png') !important; }
+      .bg-anuncio { background-image: url('assets/anuncio.png') !important; }
+      /* Garantir que o root ocupe a tela toda */
+      #root { min-height: 100vh; }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <!-- O conteúdo será inserido aqui -->
+    </div>
+    <script>
+        // Carregar o conteúdo processado para evitar problemas de escape no HTML direto
+        fetch('processed_root.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('root').innerHTML = html;
+            });
+    </script>
+</body>
+</html>
