@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/teologia/index.html", "destination": "/teologia/index.html" },
+    { "source": "/teologia/(.*)", "destination": "/teologia/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/teologia/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ]
+}
