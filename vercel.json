@@ -1,7 +1,7 @@
 {
   "version": 2,
   "buildCommand": "bash build.sh",
-  "outputDirectory": "público",
+  "outputDirectory": "public",
   "framework": null,
   "cleanUrls": false,
   "trailingSlash": false,
