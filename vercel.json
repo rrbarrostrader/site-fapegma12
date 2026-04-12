@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "mkdir -p /tmp/teologia-backup && (cp -r público/teologia /tmp/teologia-backup 2>/dev/null || true) && npm run build && (cp -r /tmp/teologia-backup/teologia público/teologia 2>/dev/null || true)",
+  "buildCommand": "mv público/teologia /tmp/teologia-save 2>/dev/null; npm run build; mv /tmp/teologia-save público/teologia 2>/dev/null; exit 0",
   "outputDirectory": "público",
   "framework": null,
   "cleanUrls": false,
