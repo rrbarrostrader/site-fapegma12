@@ -1,0 +1,10 @@
+{
+  "buildCommand": "bash build.sh",
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/teologia", "destination": "/teologia/index.html" },
+    { "source": "/teologia/", "destination": "/teologia/index.html" },
+    { "source": "/teologia/index.html", "destination": "/teologia/index.html" }
+  ]
+}
